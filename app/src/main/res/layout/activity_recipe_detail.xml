@@ -1,10 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".RecipeDetailActivity">
+    android:background="#F5F7F6"
+    android:padding="20dp">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvDetailRecipeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recipe Title"
+            android:textColor="#1B5E20"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDetailStatusBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp"
+            android:text="✓ All Ingredients Available in Your Pantry"
+            android:textColor="#2E7D32"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Required Ingredients:"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDetailIngredients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="#FFFFFF"
+            android:lineSpacingExtra="6dp"
+            android:padding="16dp"
+            android:text="• Ingredient 1"
+            android:textColor="#424242"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="Preparation Steps:"
+            android:textColor="#212121"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvDetailSteps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:background="#FFFFFF"
+            android:lineSpacingExtra="6dp"
+            android:padding="16dp"
+            android:text="1. Step one..."
+            android:textColor="#424242"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/btnBackFromDetail"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:backgroundTint="#2E7D32"
+            android:text="← Back to Suggested Recipes"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>
